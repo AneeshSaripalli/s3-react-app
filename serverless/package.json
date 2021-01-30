@@ -8,12 +8,14 @@
     "compile:protos": "sudo docker run -v `pwd`:/defs namely/protoc-all -d routes/protos/src -o routes/protos/gen -l web"
   },
   "dependencies": {
+    "google-protobuf": "^3.14.0",
     "protobufjs": "^6.10.2",
     "source-map-support": "^0.5.19",
     "ts-protoc-gen": "^0.14.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.64",
+    "@types/google-protobuf": "^3.7.4",
     "@types/node": "^14.14.6",
     "@types/protobufjs": "^6.0.0",
     "@types/serverless": "^1.78.8",
