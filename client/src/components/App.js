@@ -13,7 +13,7 @@ export const App = () => {
     <div className="app">
       <img src={hooray} alt="celebrate" />
       <h1>Welcome to my website from an AWS S3!</h1>
-      <h2>{text}</h2>
+      <h2>{JSON.stringify(text)}</h2>
     </div>
   );
 };
